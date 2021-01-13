@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="overflow-hidden">
+
+    <main>
+        <section>
+            <div class="row no-gutters">
+                <div class="left__list col-md-2 bg-info flex-grow-1 vh-100 d-flex flex-column">
+                    <ul class="types__list list-group overflow-auto flex-grow-1">
+                        <li class="types__item list-group-item list-group-item-action text-center">
+                            <a class="types__link h5 all" href="#" data-type="all">All</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 d-flex flex-column flex-grow-1 vh-100">
+                    <header>
+                        <form class="form__search" action="">
+                            <input class="form__search-input form-control py-4 bg-dark border-0 rounded-0"
+                                placeholder='Pokemon name e.g. Pikachu' type="text">
+                        </form>
+                    </header>
+                    <section class="overflow-auto flex-grow-1">
+                        <ul class="pokemons__list"></ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <template class="pokemons__template">
+        <li class="pokemons__item card">
+            <a class="pokemons__link d-flex flex-column" href="">
+                <img class="pokemons__img card-img-top w-50 h-50 ml-auto mr-auto">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-2 h4">Card title</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="pokemons__height">0.7m</span>
+                        <p class="card-text h6 text-center mb-0">Seed pokemons</p>
+                        <span class="pokemons__weight">0.7m</span>
+                    </div>
+                    <p class="pokemons__type text-center h5 mt-2"></p>
+                </div>
+            </a>
+        </li>
+    </template>
+
+    <template class="types__template">
+        <li class="types__item list-group-item list-group-item-action text-center">
+            <a class="types__link h5" href="#"></a>
+        </li>
+    </template>
+
+    <script src="https://kit.fontawesome.com/5ecb376021.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/pagenation.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/normalized.js"></script>
+    <script src="js/pokemons.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
